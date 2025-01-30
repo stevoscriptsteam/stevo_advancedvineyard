@@ -217,9 +217,14 @@ end)
 RegisterNetEvent('stevo_advancedvineyard:bottledWine', function()
     if not CurrentlyBottling[source] then return end
 
+    if CurrentlyBottling[source].red > 0 then
     stevo_lib.AddItem(source, 'redwinebottle', CurrentlyBottling[source].red)
-    stevo_lib.AddItem(source, 'whitewinebottle', CurrentlyBottling[source].white)
+    end
 
+    if CurrentlyBottling[source].white > 0 then
+    stevo_lib.AddItem(source, 'whitewinebottle', CurrentlyBottling[source].white)
+    end
+    
     if config.debug then
         local name = GetPlayerName(source)
         local identifier = stevo_lib.GetIdentifier(source)
