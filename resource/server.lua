@@ -35,7 +35,7 @@ lib.callback.register('stevo_advancedvineyard:grapePicked', function(source)
     math.randomseed(os.time())
 
     local grapeItem = config.grapePicking.items[math.random(1, #config.grapePicking.items)]
-    local grapeAmount = config.grapePicking.pickChance
+    local grapeAmount = math.random(config.grapePicking.pickChance.min, config.grapePicking.pickChance.max)
 
     stevo_lib.AddItem(source, grapeItem, grapeAmount)
 
@@ -259,8 +259,6 @@ AddEventHandler('onResourceStart', function(resource)
             WineProcessing[wineProcess.identifier] = processTable
         end
     end
-
-    print(json.encode(WineProcessing))
 end)
 
 

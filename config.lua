@@ -10,7 +10,10 @@ return {
            'whitegrape', 
            'redgrape'
         },
-        pickChance = math.random(1, 3), -- Can use math.random(1, 5), amount you receive every time you pick
+        pickChance = { -- The amount of something you have a chance of picking. Set max to 1 for one at a time
+            min = 1,
+            max = 3
+        },
         pickLimit = 2, -- Amount of times a vine can be picked before player must move to a new vine
         pickDuration = 3,
         viewDistance = 3.0,
