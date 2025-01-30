@@ -165,9 +165,9 @@ lib.callback.register('stevo_advancedvineyard:sellWine', function(source)
     local wineItems = {'redwinebottle', 'whitewinebottle'}
 
     for _, wine in pairs(wineItems) do
-        local amount = stevo_lib.HasItem(source, wine)
+        local amount = stevo_lib.HasItem(source, wine) or 0 -- test for debugging
 
-        if not amount or amount > 0 then
+        if amount > 0 then
             local salePrice = config.wineBoss.buyItems[wine].sale
             local payout = amount * salePrice
 
@@ -185,6 +185,7 @@ lib.callback.register('stevo_advancedvineyard:sellWine', function(source)
 
     return soldWine, profit, wineSold
 end)
+
 
 lib.callback.register('stevo_advancedvineyard:buyEmptyBottles', function(source, bottleCount)
     local identifier = stevo_lib.GetIdentifier(source)
@@ -270,7 +271,3 @@ end)
 AddEventHandler('onResourceStop', function(resource)
     if resource ~= cache.resource then return end
 end)
-
-
-
- 
