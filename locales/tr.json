@@ -1,0 +1,51 @@
+{
+    "notify": {
+        "pickLimit": "Buradaki tüm üzümleri topladınız!",
+        "failedSkill": "Hiçbir şey toplamayı başaramadınız!",
+        "pickedGrape": "Üzüm topladınız!",
+        "notEnoughGrapes": "Bir şişe yapacak kadar üzümünüz yok!",
+        "startedProcessing": "Üzümleri işlemeye başladınız",
+        "notEnoughBottles": "Yeterli şişeniz yok, ihtiyacınız olan: %s",
+        "bottledWine": "Tüm şaraplarınızı şişelediniz!",
+        "soldWine": "%sx Şarabı $%s karşılığında sattınız",
+        "noWine": "Hiç şarabınız yok!",
+        "notEnoughMoney": "Boş şişe almak için yeterli paranız yok!",
+        "boughtBottles": "%s şişe satın aldınız"
+    },
+
+    "progress": {
+        "pickingGrape": "Üzüm Toplanıyor...",
+        "bottlingWine": "Şarap Şişeleniyor..."
+    },
+
+    "textui": {
+        "pickGrapes": "**[E]** Üzüm Topla",
+        "processGrapes": "**[E]** Üzümleri İşle",
+        "wineBoss": "**[E]** Şarap Patronu"
+    },
+
+    "target": {
+        "wineBoss": "Şarap Patronu"
+    },
+
+    "input": {
+        "sellWine": "Boş Şişe Satın Al",
+        "wineAmount": "Satın Alınacak Miktar"
+    },
+
+    "menu": {
+        "buyerTitle": "Şarap Patronu'na Eşyaları Sat",
+        "processProgress": "İşleme Süreci",
+        "processingProgressDescription": "%s%% tamamlandı.",
+        "processingTitle": "Üzümleri İşle",
+        "processWine": "İşleme Başla",
+        "processWineDescription": "Beyaz ve kırmızı üzümlerinizi şaraba dönüştürün!\n 1x Şişe = 5x Üzüm",
+        "bottleWine": "Şarap Şişele",
+        "bottleWineDescription": "Gerekli: \n %sx boş şarap şişesi",
+        "processInfo": "İşleme Bilgisi",
+        "processInfoDescription": "Kırmızı Şarap Şişeleri: %s \n Beyaz Şarap Şişeleri: %s",
+        "sellWine": "Şarap Sat",
+        "sellWineDescription": "Kırmızı Şişeler: $%s \n Beyaz Şişeler: $%s",
+        "buyWineBottles": "Boş Şarap Şişesi Satın Al ($%s)"
+    }
+}
