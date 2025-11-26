@@ -26,5 +26,6 @@ files {
 }
 
 dependencies {
-    'ox_lib'
+    'ox_lib',
+    'stevo_lib'
 }
